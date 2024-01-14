@@ -1,1 +1,1 @@
-export { default as ReactSvg } from "./ReactSvg";
+export { default as ReactSvg } from './ReactSvg'

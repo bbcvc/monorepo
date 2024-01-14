@@ -1,10 +1,10 @@
-import { defineConfig } from 'rollup';
-import commonjs from '@rollup/plugin-commonjs';
+import { defineConfig } from 'rollup'
+import commonjs from '@rollup/plugin-commonjs'
 import postcss from 'rollup-plugin-postcss'
-import { nodeResolve as resolve } from '@rollup/plugin-node-resolve';
-import typescript from 'rollup-plugin-typescript2';
-import { babel } from '@rollup/plugin-babel';
-import { name } from './package.json';
+import { nodeResolve as resolve } from '@rollup/plugin-node-resolve'
+import typescript from 'rollup-plugin-typescript2'
+import { babel } from '@rollup/plugin-babel'
+import { name } from './package.json'
 
 export default defineConfig([
   {
@@ -13,7 +13,7 @@ export default defineConfig([
     plugins: [
       typescript(),
       resolve({
-        extensions: ['.tsx', '.ts', '.js']
+        extensions: ['.tsx', '.ts', '.js'],
       }),
       postcss({}),
       babel({
@@ -46,8 +46,8 @@ export default defineConfig([
         format: 'umd',
         globals: {
           react: 'React',
-          'react-dom': 'ReactDOM'
-        }
+          'react-dom': 'ReactDOM',
+        },
       },
       {
         name,
@@ -58,7 +58,7 @@ export default defineConfig([
         name,
         file: './lib/components/index.cjs',
         format: 'commonjs',
-      }
-    ]
-  }
+      },
+    ],
+  },
 ])

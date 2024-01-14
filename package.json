@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "format": "prettier **/*.{js,ts,jsx,tsx} --write --ignore-path .gitignore && git update-index --again",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -1,0 +1,10 @@
+.snapshots/
+build/
+dist/
+node_modules/
+.umi/
+
+.demo/
+.renderer/
+pnpm-lock.yaml
+pnpm-workspace.yaml
