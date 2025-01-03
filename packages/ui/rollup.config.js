@@ -12,8 +12,8 @@ export default defineConfig([
     external: ['react', 'react-dom'],
     plugins: [
       typescript({
-        declaration: true, // 是否生成声明文件
-        declarationDir: 'dist/types', // 声明文件输出目录
+        declaration: true,
+        check: false, // https://github.com/ezolenko/rollup-plugin-typescript2/issues/214
       }),
       resolve({
         extensions: ['.tsx', '.ts', '.js'],
