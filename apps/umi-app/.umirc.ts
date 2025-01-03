@@ -3,7 +3,7 @@ import { defineConfig } from 'umi'
 export default defineConfig({
   routes: [
     { path: '/', component: 'index' },
-    { path: '/docs', component: 'docs' },
+    { path: '/icons', component: 'icons' },
   ],
   npmClient: 'pnpm',
 })

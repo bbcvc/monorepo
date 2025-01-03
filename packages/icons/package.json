@@ -1,11 +1,13 @@
 {
-  "name": "@infars/icons",
+  "name": "@monorepo/icons",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.ts",
   "scripts": {
-    "build": "rm -rf rc && svgr -d rc icons-svg",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "pnpm run build -- --watch",
+    "build": "pnpm run clean && pnpm build:svg",
+    "build:svg": "svgr --config-file svgr.config.js --out-dir dist src",
+    "clean": "rimraf dist"
   },
   "keywords": [],
   "author": "",

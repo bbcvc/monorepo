@@ -1,16 +1,14 @@
 {
-  "name": "ui",
+  "name": "@monorepo/ui",
   "version": "1.0.0",
   "description": "An infrastructure monorepo ui library for all front-end apps.",
-  "browser": {
-    "./components": "./es/components/index.js"
-  },
-  "exports": {
-    "./components": {
-      "import": "./es/components/index.js",
-      "require": "./lib/components/index.cjs"
-    }
-  },
+  "type": "module",
+  "module": "dist/index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "start": "npm run dev",
     "dev": "rollup --config rollup.config.js --watch",
@@ -18,6 +16,7 @@
     "prepare": "npm run build"
   },
   "dependencies": {
+    "@monorepo/icons": "workspace:*",
     "lodash-es": "^4.17.21"
   },
   "peerDependencies": {
@@ -25,12 +24,6 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@infars/icons": "workspace:*",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
-    "@types/lodash-es": "^4.17.5",
     "@babel/core": "^7.14.5",
     "@babel/node": "^7.14.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.14.5",
@@ -43,8 +36,13 @@
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.1",
-    "rollup": "^2.60.2",
+    "@types/lodash-es": "^4.17.5",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
     "postcss": "^8.4.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "rollup": "^2.60.2",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.31.1",
     "tslib": "^2.3.0",

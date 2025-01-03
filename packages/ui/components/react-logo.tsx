@@ -1,6 +1,11 @@
 import React from 'react'
-import { ReactSvg } from '@infars/icons/rc'
+import { ReactSvg } from '@monorepo/icons'
 
 export default function ReactLogo() {
-  return <ReactSvg />
+  return (
+    <>
+      <h1>React App</h1>
+      <ReactSvg style={{ width: '100px', height: '100px' }} />
+    </>
+  )
 }

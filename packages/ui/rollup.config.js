@@ -11,7 +11,10 @@ export default defineConfig([
     input: 'components/index.tsx',
     external: ['react', 'react-dom'],
     plugins: [
-      typescript(),
+      typescript({
+        declaration: true, // 是否生成声明文件
+        declarationDir: 'dist/types', // 声明文件输出目录
+      }),
       resolve({
         extensions: ['.tsx', '.ts', '.js'],
       }),
@@ -42,8 +45,8 @@ export default defineConfig([
     output: [
       {
         name,
-        file: './dist/components/index.js',
-        format: 'umd',
+        file: './dist/index.js',
+        format: 'es',
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
@@ -51,14 +54,18 @@ export default defineConfig([
       },
       {
         name,
-        file: './es/components/index.js',
+        file: './dist/es/index.js',
         format: 'es',
       },
       {
         name,
-        file: './lib/components/index.cjs',
+        file: './dist/cjs/index.cjs',
         format: 'commonjs',
       },
+      // {
+      //   file: './dist/index.d.ts',
+      //   format: 'es',
+      // },
     ],
   },
 ])
