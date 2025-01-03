@@ -43,6 +43,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "rollup": "^2.60.2",
+    "rollup-plugin-dts": "^6.1.1",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.31.1",
     "tslib": "^2.3.0",

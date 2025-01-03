@@ -5,6 +5,7 @@ import { nodeResolve as resolve } from '@rollup/plugin-node-resolve'
 import typescript from 'rollup-plugin-typescript2'
 import { babel } from '@rollup/plugin-babel'
 import { name } from './package.json'
+import { dts } from 'rollup-plugin-dts'
 
 export default defineConfig([
   {
@@ -23,6 +24,7 @@ export default defineConfig([
         babelrc: false,
         exclude: '**/node_modules/**',
         babelHelpers: 'runtime',
+        skipPreflightCheck: true,
         presets: ['@babel/preset-react', '@babel/preset-env'],
         plugins: [
           '@babel/plugin-proposal-object-rest-spread',
@@ -54,13 +56,18 @@ export default defineConfig([
       },
       {
         name,
+        file: './dist/cjs/index.cjs',
+        format: 'commonjs',
+      },
+      {
+        name,
         file: './dist/es/index.js',
         format: 'es',
       },
       {
-        name,
-        file: './dist/cjs/index.cjs',
-        format: 'commonjs',
+        file: './dist/index.d.ts',
+        format: 'es',
+        plugins: [dts()],
       },
     ],
   },
