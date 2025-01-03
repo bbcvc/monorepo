@@ -64,11 +64,14 @@ export default defineConfig([
         file: './dist/es/index.js',
         format: 'es',
       },
-      {
-        file: './dist/index.d.ts',
-        format: 'es',
-        plugins: [dts()],
-      },
     ],
+  },
+  {
+    input: 'src/index.tsx',
+    output: {
+      file: './dist/index.d.ts',
+      format: 'es',
+    },
+    plugins: [dts()],
   },
 ])
