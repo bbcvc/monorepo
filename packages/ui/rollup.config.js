@@ -68,6 +68,7 @@ export default defineConfig([
   },
   {
     input: 'src/index.tsx',
+    watch: true,
     output: {
       file: './dist/index.d.ts',
       format: 'es',

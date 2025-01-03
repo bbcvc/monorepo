@@ -1,6 +1,12 @@
 import React from 'react'
 import styles from './index.module.less'
 
-export default function Button(): React.ReactElement {
-  return <div className={styles.button}>Button1</div>
+const Button: React.FC<React.ComponentPropsWithRef<'button'>> = (props) => {
+  return (
+    <button type='button' className={styles.button} {...props}>
+      Button1
+    </button>
+  )
 }
+
+export default Button
