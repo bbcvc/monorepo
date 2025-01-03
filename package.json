@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm -F ui run dev & pnpm -F web run dev",
-    "dev:web": "pnpm -F web run dev",
+    "dev": "pnpm run dev:ui & pnpm run dev:web & pnpm run dev:icons",
     "dev:ui": "pnpm -F ui run dev",
+    "dev:web": "pnpm -F web run dev",
     "dev:icons": "pnpm -F icons-lib run dev",
-    "format": "prettier **/*.{js,ts,jsx,tsx} --write --ignore-path .gitignore && git update-index --again",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier **/*.{js,ts,jsx,tsx} --write --ignore-path .gitignore && git update-index --again"
   },
   "keywords": [],
   "author": "",

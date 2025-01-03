@@ -8,7 +8,7 @@ import { name } from './package.json'
 
 export default defineConfig([
   {
-    input: 'components/index.tsx',
+    input: 'src/index.tsx',
     external: ['react', 'react-dom'],
     plugins: [
       typescript({
@@ -62,10 +62,6 @@ export default defineConfig([
         file: './dist/cjs/index.cjs',
         format: 'commonjs',
       },
-      // {
-      //   file: './dist/index.d.ts',
-      //   format: 'es',
-      // },
     ],
   },
 ])
