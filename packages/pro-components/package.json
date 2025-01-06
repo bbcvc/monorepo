@@ -1,0 +1,17 @@
+{
+  "name": "@monorepo/pro-components",
+  "description": "This is a pro-components.",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    "./*": "./*/index.tsx"
+  },
+  "sideEffects": false,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@monorepo/icons": "workspace:^"
+  }
+}

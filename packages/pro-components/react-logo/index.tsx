@@ -1,4 +1,3 @@
-import React from 'react'
 import { ReactSvg } from '@monorepo/icons'
 
 export default function ReactLogo() {
@@ -11,7 +10,7 @@ export default function ReactLogo() {
         borderRadius: '4px',
       }}
     >
-      <h1>组件库-自定义组件</h1>
+      <h1 className='text-sm text-red-300'>组件库-自定义业务组件</h1>
       <h2>👇这是来自icons的图标</h2>
       <ReactSvg style={{ width: '100px', height: '100px' }} />
     </div>

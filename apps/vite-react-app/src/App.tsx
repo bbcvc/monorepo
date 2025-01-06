@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { ReactLogo, Button } from '@monorepo/ui'
 import './App.css'
+import { Button } from '@monorepo/ui'
 import { Citrus } from '@monorepo/icons'
+import ReactLogo from '@monorepo/pro-components/react-logo'
 
 function App() {
   const [count, setCount] = useState(0)
