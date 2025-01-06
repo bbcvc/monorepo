@@ -1,16 +1,27 @@
 import { useState } from 'react'
 import { ReactLogo, Button } from '@monorepo/ui'
 import './App.css'
+import { Citrus } from '@monorepo/icons'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: 12,
+          marginBottom: 12,
+        }}
+      >
         <ReactLogo />
         <Button />
       </div>
+
+      <Citrus color='red' fontSize='24' />
 
       <h1>Vite + React</h1>
       <div className='card'>

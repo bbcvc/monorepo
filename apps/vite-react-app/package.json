@@ -10,9 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@monorepo/icons": "workspace:^",
+    "@monorepo/ui": "workspace:*",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@monorepo/ui": "workspace:*"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

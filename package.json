@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm run dev:ui & pnpm run dev:web & pnpm run dev:icons",
+    "dev": "pnpm run build:svg && pnpm run dev:ui & pnpm run dev:web & pnpm run dev:icons",
     "dev:ui": "pnpm -F ui run dev",
     "dev:web": "pnpm -F web run dev",
     "dev:icons": "pnpm -F icons-lib run dev",
+    "build:svg": "pnpm run -F icons build:svg",
     "format": "prettier **/*.{js,ts,jsx,tsx} --write --ignore-path .gitignore && git update-index --again"
   },
+  "postinstall": "pnpm run build:svg",
   "keywords": [],
   "author": "",
   "license": "ISC",
