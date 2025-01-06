@@ -70,9 +70,6 @@ importers:
       eslint-plugin-react-refresh:
         specifier: ^0.4.5
         version: 0.4.16(eslint@8.57.1)
-      typescript:
-        specifier: ^5.2.2
-        version: 5.7.2
       vite:
         specifier: ^5.0.8
         version: 5.4.11(@types/node@20.11.0)(less@4.2.1)(lightningcss@1.22.1)(terser@5.37.0)
@@ -100,15 +97,18 @@ importers:
         version: 5.0.5
 
   packages/pro-components:
-    devDependencies:
+    dependencies:
       '@monorepo/icons':
         specifier: workspace:^
         version: link:../icons
+      '@monorepo/ui':
+        specifier: workspace:^
+        version: link:../ui
 
   packages/ui:
     dependencies:
       '@monorepo/icons':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../icons
       lodash-es:
         specifier: ^4.17.21

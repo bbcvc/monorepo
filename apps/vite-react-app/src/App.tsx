@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { Button } from '@monorepo/ui'
+import { Button, Input } from '@monorepo/ui'
 import { Citrus } from '@monorepo/icons'
 import ReactLogo from '@monorepo/pro-components/react-logo'
 
@@ -20,6 +20,7 @@ function App() {
       >
         <ReactLogo />
         <Button />
+        <Input />
       </div>
 
       <Citrus color='red' fontSize='24' />

@@ -11,7 +11,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
+    "@monorepo/ui": "workspace:^",
     "@monorepo/icons": "workspace:^"
   }
 }
