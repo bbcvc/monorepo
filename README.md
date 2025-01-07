@@ -304,6 +304,7 @@ ii. `package.json`
 ### 1. infra
 
 使用 `umi` 快速构建一个用于展示基础组件的项目
+
 i. 初始化
 
 ```bash
