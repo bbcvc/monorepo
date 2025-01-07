@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo/icons-lib",
+  "name": "@monorepo/infra",
   "private": true,
   "author": "chenglong <chenglong9604@outlook.com>",
   "scripts": {

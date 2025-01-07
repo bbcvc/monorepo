@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm run build:svg && pnpm run dev:ui & pnpm run dev:web & pnpm run dev:icons",
+    "dev": "pnpm run build:svg && pnpm run dev:ui & pnpm run dev:web",
     "dev:ui": "pnpm -F ui run dev",
     "dev:web": "pnpm -F web run dev",
-    "dev:icons": "pnpm -F icons-lib run dev",
+    "dev:infra": "pnpm -F infra run dev",
     "build:svg": "pnpm run -F icons build:svg",
     "format": "prettier **/*.{js,ts,jsx,tsx} --write --ignore-path .gitignore && git update-index --again"
   },
@@ -16,14 +16,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^5.3.3",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
-    "prettier": "^3.2.1"
+    "lint-staged": "^15.3.0",
+    "prettier": "^3.2.1",
+    "typescript": "^5.3.3"
   },
   "dependencies": {
-    "tslib": "^2.3.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tslib": "^2.3.0"
   }
 }
