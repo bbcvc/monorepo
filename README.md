@@ -269,7 +269,7 @@ ii. `package.json`
 > `pro-components` 这个包用作项目的业务组件，通常可能是基于多个 `ui` 组件的复合组件，以满足业务的需求
 > 这个不做打包处理，在开发中多次打包体验也不好
 
-使用如下的配置，可以避免使用桶文件，同时也支持了快捷的引入，直接使用 `import ReactLoga from '@monorepo/pro-components/react-loga'`
+使用如下的配置，可以避免使用桶文件，同时也支持了快捷的引入，直接使用 `import ReactLogo from '@monorepo/pro-components/react-logo'`
 
 `package.json`
 
@@ -280,7 +280,7 @@ ii. `package.json`
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  // 这里的配置是为了支持使用 `import ReactLoga from '@monorepo/pro-components/react-loga'`
+  // 这里的配置是为了支持使用 `import ReactLogo from '@monorepo/pro-components/react-logo'`
   "exports": {
     "./*": "./*/index.tsx"
   },
