@@ -9,6 +9,7 @@
     "dev:ui": "pnpm -F ui run dev",
     "dev:web": "pnpm -F web run dev",
     "dev:infra": "pnpm -F infra run dev",
+    "build": "turbo run build",
     "build:svg": "pnpm run -F icons build:svg",
     "format": "prettier **/*.{js,ts,jsx,tsx} --write --ignore-path .gitignore && git update-index --again"
   },
