@@ -1,0 +1,26 @@
+{
+  "pipeline": {
+    "build": {
+      "dependsOn": ["build"]
+    },
+    "install": {
+      "dependsOn": ["postinstall"]
+    }
+  },
+  "projects": [
+    {
+      "name": "por-components",
+      "packagePath": "packages/pro-components"
+    },
+    {
+      "name": "infare",
+      "packagePath": "apps/umi-app",
+      "dependsOn": ["shared-components"]
+    },
+    {
+      "name": "web",
+      "packagePath": "apps/vite-react-app",
+      "dependsOn": ["shared-components"]
+    }
+  ]
+}
