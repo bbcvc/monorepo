@@ -5,19 +5,8 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".umi/**", ".next/**"]
     },
-    "install": {
-      "dependsOn": ["postinstall"]
-    },
     "dev": {
       "cache": false
-    },
-    "build:infra": {
-      "cache": false,
-      "outputs": ["dist"]
-    },
-    "build:web": {
-      "cache": false,
-      "outputs": ["dist"]
     }
   }
 }
