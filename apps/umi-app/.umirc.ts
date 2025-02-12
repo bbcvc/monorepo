@@ -1,9 +1,12 @@
-import { defineConfig } from 'umi'
+import { defineConfig } from "umi";
 
 export default defineConfig({
+  npmClient: "pnpm",
   routes: [
-    { path: '/', component: 'index' },
-    { path: '/icons', component: 'icons' },
+    { path: "/", component: "index" },
+    { path: "/icons", component: "icons" },
   ],
-  npmClient: 'pnpm',
-})
+
+  tailwindcss: {},
+  plugins: ["@umijs/plugins/dist/tailwindcss"],
+});

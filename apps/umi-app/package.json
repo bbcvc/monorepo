@@ -12,5 +12,9 @@
   "dependencies": {
     "umi": "^4.1.0",
     "@monorepo/icons": "workspace:^"
+  },
+  "devDependencies": {
+    "@umijs/plugins": "^4.4.4",
+    "tailwindcss": "^3"
   }
 }
