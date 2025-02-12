@@ -12,10 +12,12 @@
       "cache": false
     },
     "build:infra": {
-      "cache": false
+      "cache": false,
+      "outputs": ["dist"]
     },
     "build:web": {
-      "cache": false
+      "cache": false,
+      "outputs": ["dist"]
     }
   }
 }
