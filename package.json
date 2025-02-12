@@ -26,5 +26,28 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tslib": "^2.3.0"
+  },
+   "turbo": {
+    "npmClient": "pnpm",
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          "dist/**",
+          ".umi/**",
+          ".next/**"
+        ]
+      },
+      "deploy": {
+        "dependsOn": [
+          "build"
+        ]
+      },
+      "dev": {
+        "cache": false
+      }
+    }
   }
 }
