@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "packageManager": "pnpm@9.6.0",
   "scripts": {
     "dev": "pnpm run build:svg && pnpm run dev:ui & pnpm run dev:web",
     "dev:ui": "pnpm -F ui run dev",
