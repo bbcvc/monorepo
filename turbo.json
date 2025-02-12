@@ -11,7 +11,10 @@
     "dev": {
       "cache": false
     },
-    "build:ui": {
+    "build:infra": {
+      "cache": false
+    },
+    "build:web": {
       "cache": false
     }
   }
