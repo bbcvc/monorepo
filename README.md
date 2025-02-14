@@ -3,6 +3,10 @@
 > [!IMPORTANT]  
 > 技术栈：pnpm rollup vite umi react18 typescript
 
+## 预览
+infra：https://infra.monorepo.cl96.top/
+web：https://web.monorepo.cl96.top/
+
 ## 一、从零开始构建 monorepo
 
 ### 1. 初始化项目文件夹
