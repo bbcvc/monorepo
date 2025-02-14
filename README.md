@@ -5,7 +5,11 @@
 
 ## 预览
 infra：https://infra.monorepo.cl96.top/  
+<img width="1512" alt="image" src="https://github.com/user-attachments/assets/d638cd00-e735-40c9-a8af-5716f696ab8b" />
+
 web：https://web.monorepo.cl96.top/
+<img width="1512" alt="image" src="https://github.com/user-attachments/assets/bda6688c-ddee-4ba1-acd7-bfae7c262abf" />
+
 
 ## 一、从零开始构建 monorepo
 
