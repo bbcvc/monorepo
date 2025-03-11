@@ -8,6 +8,7 @@
     "dev": "pnpm run build:svg && pnpm run dev:ui & pnpm run dev:web",
     "dev:ui": "pnpm -F ui run dev",
     "dev:web": "pnpm -F web run dev",
+    "dev:tanstack": "pnpm -F tanstack run dev",
     "dev:infra": "pnpm -F infra run dev",
     "build": "turbo run build",
     "build:svg": "pnpm run -F icons build:svg",
