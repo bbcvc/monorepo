@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Input = () => {
-  return <input />
+const Input = (props: React.ComponentPropsWithoutRef<'input'>) => {
+  return <input {...props} />
 }
 
 export default Input

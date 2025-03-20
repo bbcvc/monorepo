@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@monorepo/icons": "workspace:^",
+    "@monorepo/shared": "workspace:^",
     "lodash-es": "^4.17.21"
   },
   "peerDependencies": {

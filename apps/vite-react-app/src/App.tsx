@@ -9,17 +9,9 @@ function App() {
 
   return (
     <>
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: 12,
-          marginBottom: 12,
-        }}
-      >
+      <div className='w-full space-y-1 flex flex-col items-center justify-center'>
         <ReactLogo />
-        <Button />
+        <Button className='bg-amber-500' />
         <Input />
       </div>
 

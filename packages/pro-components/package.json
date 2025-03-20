@@ -12,7 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@monorepo/ui": "workspace:^",
-    "@monorepo/icons": "workspace:^"
+    "@monorepo/icons": "workspace:^",
+    "@monorepo/shared": "workspace:^",
+    "@monorepo/ui": "workspace:^"
   }
 }
