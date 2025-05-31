@@ -5,7 +5,7 @@
   "main": "index.js",
   "packageManager": "pnpm@9.6.0",
   "scripts": {
-    "dev": "pnpm run build:svg && pnpm run dev:ui & pnpm run dev:web",
+    "dev": "pnpm run build:svg && pnpm run dev:ui & pnpm run dev:web & pnpm run dev:tanstack",
     "dev:ui": "pnpm -F ui run dev",
     "dev:web": "pnpm -F web run dev",
     "dev:tanstack": "pnpm -F tanstack run dev",
