@@ -5,7 +5,7 @@ import readme from '../../README.md'
 
 export default function HomePage() {
   return (
-    <div className='prose prose-blog m-auto'>
+    <div className='prose max-w-4xl prose-blog m-auto'>
       <ReactMarkdown>{readme}</ReactMarkdown>
     </div>
   )
