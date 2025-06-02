@@ -4,7 +4,8 @@
   "description": "",
   "main": "./dist/index.ts",
   "scripts": {
-    "dev": "pnpm run build -- --watch",
+    "dev": "pnpm run clean && pnpm build:svg",
+    "dev:watch": "pnpm run build -- --watch",
     "build": "pnpm run clean && pnpm build:svg",
     "build:svg": "svgr --config-file svgr.config.js --out-dir dist src",
     "clean": "rimraf dist"
