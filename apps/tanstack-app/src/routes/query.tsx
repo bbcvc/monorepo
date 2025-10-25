@@ -1,10 +1,10 @@
-import { createFileRoute } from '@tanstack/react-router'
-import Example from '../components/query-demo'
+import { createFileRoute } from "@tanstack/react-router";
+import Example from "../components/query-demo";
 
-export const Route = createFileRoute('/query')({
+export const Route = createFileRoute("/query")({
   component: RouteComponent,
-})
+});
 
 function RouteComponent() {
-  return <Example />
+  return <Example />;
 }

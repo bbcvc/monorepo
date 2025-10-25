@@ -1,3 +1,2 @@
-import { cn } from './src/utils'
-
-export { cn }
+/** biome-ignore-all lint/performance/noBarrelFile: biome ignore */
+export { cn } from "./src/utils";

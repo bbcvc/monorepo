@@ -1,14 +1,14 @@
-import React from 'react'
-import styles from './index.module.less'
-import { cn } from '@monorepo/shared'
+import { cn } from "@monorepo/shared";
+import type React from "react";
+import styles from "./index.module.less";
 
-const Button: React.FC<React.ComponentPropsWithRef<'button'>> = (props) => {
-  const { className, ...rest } = props
+const Button: React.FC<React.ComponentPropsWithRef<"button">> = (props) => {
+  const { className, ...rest } = props;
   return (
-    <button type='button' className={cn(styles.button, props.className)} {...rest}>
+    <button className={cn(styles.button, className)} type="button" {...rest}>
       Button1
     </button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
