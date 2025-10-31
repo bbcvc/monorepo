@@ -13,8 +13,5 @@
     "@monorepo/icons": "workspace:^",
     "@monorepo/ui": "workspace:^",
     "@monorepo/pro-components": "workspace:^"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.2.1"
   }
 }
