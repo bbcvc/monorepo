@@ -13,13 +13,5 @@
     "@monorepo/icons": "workspace:^",
     "@monorepo/ui": "workspace:^",
     "@monorepo/pro-components": "workspace:^"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.14.0",
-    "@typescript-eslint/parser": "^6.14.0",
-    "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.55.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5"
   }
 }

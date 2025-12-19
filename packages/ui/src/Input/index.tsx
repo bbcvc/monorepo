@@ -1,7 +1,7 @@
-import React from 'react'
+import type React from "react";
 
-const Input = (props: React.ComponentPropsWithoutRef<'input'>) => {
-  return <input {...props} />
-}
+const Input = (props: React.ComponentPropsWithoutRef<"input">) => (
+  <input {...props} />
+);
 
-export default Input
+export default Input;
